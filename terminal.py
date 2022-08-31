@@ -32,9 +32,9 @@ apt: Install a APT package. [Debian based systems only]
             
             elif cmd == 'ls':
                 if 'command' in subprocess.getoutput('ls'):
-                    os.system('dir')
+                    out = subprocess.getoutput('dir')
                 else:
-                    os.system('ls')
+                    out = subprocess.getoutput('ls')
                 print(f'''File(s) in dir: {CURR_DIR}
 {out}''')
 
