@@ -31,7 +31,7 @@ apt: Install a APT package. [Debian based systems only]
                 ''')
             
             elif cmd == 'ls':
-                out = subprocess.getoutput('ls')
+                out = os.listdir()
                 print(f'''File(s) in dir: {CURR_DIR}
 {out}''')
 
